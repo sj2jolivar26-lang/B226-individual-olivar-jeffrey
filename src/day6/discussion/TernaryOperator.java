@@ -28,7 +28,7 @@ public class TernaryOperator {
         System.out.println(tempResult);
         
         // Positive or Negative
-        int num6 = -1;
+        int num = -1;
         
         String result = (num == 0) ? "Neutral"
                 : (num > 0) ? "Positive"
