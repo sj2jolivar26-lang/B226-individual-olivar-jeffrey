@@ -9,18 +9,22 @@ package day6.discussion;
  *
  * @author Audit
  */
-public class RelationalOperator {
+public class LogicalOperator {
     public static void main(String[] args) {
-        // Cinema Logic
+                // Cinema Logic
         
         boolean hasTicket = true;
+        boolean hasVaccinationCard = true;
         boolean isSeniorCitizen = true;
+        boolean isStudent = true;
+        boolean isLoggedIn = true;
         
-            
-        
-        
-        
-        
+        // (&&)May ticket -> pwde =kang pumasoksa sinehan
+       System.out.println("Allowed to enter cinema: " + (hasTicket && hasVaccinationCard));
+        // (||)May ticker (student || senior citizen) -> discounted
+        System.out.println("Eligible for discount: " + (isStudent || isSeniorCitizen));
+        // NOT (!) Hindi naka logged in sa app
+         System.out.println("Cannot reserve seat: " + !isLoggedIn);
         
         
         // Logical &&
